@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Ghibli Photo Album</title>
+    <title>Fitness Body Album</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <style>
 
@@ -21,10 +21,10 @@
         body{
 
             background:
-            linear-gradient(rgba(10,20,30,0.45),
-            rgba(10,20,30,0.55)),
+            linear-gradient(rgba(0,0,0,0.75),
+            rgba(0,0,0,0.85)),
 
-            url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2070&auto=format&fit=crop');
+            url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=2070&auto=format&fit=crop');
 
             background-size:cover;
             background-position:center;
@@ -49,11 +49,11 @@
 
             background:
             radial-gradient(circle at top right,
-            rgba(255,255,255,0.2),
+            rgba(255,0,0,0.18),
             transparent 30%),
 
             radial-gradient(circle at bottom left,
-            rgba(255,220,150,0.15),
+            rgba(255,100,0,0.15),
             transparent 25%);
 
             z-index:-2;
@@ -79,10 +79,10 @@
 
             display:block;
 
-            width:6px;
-            height:6px;
+            width:8px;
+            height:8px;
 
-            background:#fff6b7;
+            background:#ff3c3c;
 
             border-radius:50%;
 
@@ -90,7 +90,7 @@
 
             opacity:0.7;
 
-            box-shadow:0 0 15px #fff6b7;
+            box-shadow:0 0 20px #ff3c3c;
 
         }
 
@@ -102,8 +102,8 @@
         .particles span:nth-child(2){
             left:30%;
             animation-duration:18s;
-            width:10px;
-            height:10px;
+            width:12px;
+            height:12px;
         }
 
         .particles span:nth-child(3){
@@ -144,17 +144,17 @@
 
             border-radius:25px;
 
-            background:rgba(255,255,255,0.12);
+            background:rgba(20,20,20,0.75);
 
             backdrop-filter:blur(20px);
 
-            border:1px solid rgba(255,255,255,0.2);
+            border:1px solid rgba(255,255,255,0.08);
 
             display:flex;
             justify-content:space-between;
             align-items:center;
 
-            box-shadow:0 8px 32px rgba(0,0,0,0.2);
+            box-shadow:0 8px 32px rgba(0,0,0,0.5);
 
             position:sticky;
 
@@ -167,11 +167,11 @@
         .logo{
 
             font-size:32px;
-            font-weight:700;
+            font-weight:800;
 
-            color:#fff;
+            color:#ff3c3c;
 
-            text-shadow:0 0 20px rgba(255,255,255,0.5);
+            text-shadow:0 0 20px rgba(255,60,60,0.5);
 
         }
 
@@ -208,7 +208,7 @@
             left:0;
             bottom:-5px;
 
-            background:#ffe9a9;
+            background:#ff3c3c;
 
             transition:0.4s;
 
@@ -222,7 +222,7 @@
 
         .menu a:hover{
 
-            color:#ffe9a9;
+            color:#ff3c3c;
 
         }
 
@@ -231,7 +231,7 @@
             width:90%;
             margin:auto;
 
-            margin-top:90px;
+            margin-top:100px;
 
             text-align:center;
 
@@ -245,7 +245,15 @@
 
             margin-bottom:25px;
 
-            text-shadow:0 10px 30px rgba(0,0,0,0.5);
+            font-weight:800;
+
+            text-shadow:0 10px 30px rgba(0,0,0,0.7);
+
+        }
+
+        .hero span{
+
+            color:#ff3c3c;
 
         }
 
@@ -277,17 +285,17 @@
 
             color:white;
 
-            font-weight:600;
+            font-weight:700;
 
-            background:rgba(255,255,255,0.15);
-
-            backdrop-filter:blur(15px);
-
-            border:1px solid rgba(255,255,255,0.2);
+            background:linear-gradient(
+            135deg,
+            #ff3c3c,
+            #ff7b00
+            );
 
             transition:0.4s;
 
-            box-shadow:0 8px 20px rgba(0,0,0,0.2);
+            box-shadow:0 8px 25px rgba(255,60,60,0.4);
 
         }
 
@@ -295,7 +303,7 @@
 
             transform:translateY(-5px) scale(1.03);
 
-            background:rgba(255,255,255,0.25);
+            box-shadow:0 12px 35px rgba(255,60,60,0.6);
 
         }
 
@@ -309,7 +317,11 @@
 
             font-size:42px;
 
-            text-shadow:0 10px 20px rgba(0,0,0,0.4);
+            font-weight:800;
+
+            color:#ff3c3c;
+
+            text-shadow:0 10px 20px rgba(0,0,0,0.5);
 
         }
 
@@ -320,9 +332,9 @@
 
             display:grid;
 
-            grid-template-columns:repeat(auto-fit, minmax(320px,1fr));
+            grid-template-columns:repeat(auto-fit, minmax(420px,1fr));
 
-            gap:25px;
+            gap:30px;
 
         }
 
@@ -334,13 +346,13 @@
 
             border-radius:25px;
 
-            background:rgba(255,255,255,0.12);
+            background:rgba(20,20,20,0.8);
 
             backdrop-filter:blur(20px);
 
-            border:1px solid rgba(255,255,255,0.15);
+            border:1px solid rgba(255,255,255,0.08);
 
-            box-shadow:0 8px 30px rgba(0,0,0,0.25);
+            box-shadow:0 8px 35px rgba(0,0,0,0.5);
 
             transition:0.4s;
 
@@ -350,13 +362,15 @@
 
             transform:translateY(-10px);
 
+            box-shadow:0 12px 40px rgba(255,60,60,0.3);
+
         }
 
         .album-card img{
 
             width:100%;
 
-            height:260px;
+            height:320px;
 
             object-fit:cover;
 
@@ -374,21 +388,19 @@
 
         .album-content{
 
-            padding:20px;
-
-            background:rgba(0,0,0,0.45);
-
-            backdrop-filter:blur(10px);
+            padding:22px;
 
         }
 
         .album-title{
 
-            font-size:30px;
+            font-size:32px;
 
             font-weight:700;
 
             margin-bottom:10px;
+
+            color:#ff3c3c;
 
         }
 
@@ -401,6 +413,8 @@
             margin-bottom:15px;
 
             line-height:28px;
+
+            color:#ddd;
 
         }
 
@@ -439,9 +453,9 @@
             font-size:14px;
             font-weight:600;
 
-            background:rgba(255,255,255,0.18);
+            background:rgba(255,60,60,0.2);
 
-            border:1px solid rgba(255,255,255,0.2);
+            border:1px solid rgba(255,60,60,0.4);
 
             transition:0.3s;
 
@@ -449,9 +463,9 @@
 
         .btn:hover{
 
-            background:white;
+            background:#ff3c3c;
 
-            color:#222;
+            color:white;
 
         }
 
@@ -467,7 +481,7 @@
 
             border-radius:50%;
 
-            background:rgba(255,255,255,0.25);
+            background:rgba(255,60,60,0.25);
 
             display:flex;
             justify-content:center;
@@ -485,7 +499,7 @@
 
         .favorite:hover{
 
-            background:#ff7b9c;
+            background:#ff3c3c;
 
             transform:scale(1.1);
 
@@ -497,9 +511,11 @@
 
             padding:50px;
 
-            color:#eee;
+            color:#ddd;
 
-            font-size:14px;
+            font-size:15px;
+
+            margin-top:40px;
 
         }
 
@@ -510,6 +526,12 @@
                 font-size:55px;
 
                 line-height:70px;
+
+            }
+
+            .gallery{
+
+                grid-template-columns:1fr;
 
             }
 
@@ -549,6 +571,18 @@
 
             }
 
+            .gallery{
+
+                width:95%;
+
+            }
+
+            .album-card img{
+
+                height:260px;
+
+            }
+
         }
 
     </style>
@@ -570,16 +604,16 @@
     <div class="navbar">
 
         <div class="logo">
-             Ghibli Album
+            💪 Fitness Body Album
         </div>
 
         <div class="menu">
 
             <a href="/">Home</a>
 
-            <a href="#albums-section">Albums</a>
+            <a href="#albums-section">Progress</a>
 
-            <a href="/create/">Create</a>
+            <a href="/create/">Upload</a>
 
         </div>
 
@@ -588,24 +622,25 @@
     <div class="hero">
 
         <h1>
-            A Magical World <br>
-            of Beautiful Memories
+            Transform Your <br>
+            <span>Body & Mind</span>
         </h1>
 
         <p>
-            Store your peaceful adventures, dreamy landscapes,
-            warm sunsets, nostalgic journeys, and magical moments
-            inside a breathtaking Ghibli-inspired scrapbook world.
+            Track your workouts, body transformation,
+            gym achievements, healthy lifestyle,
+            progress photos, and fitness journey
+            inside your personal Fitness Body Album System.
         </p>
 
         <a href="/create/" class="create-btn">
-             Create New Album
+            🔥 Upload Progress
         </a>
 
     </div>
 
     <h1 class="section-title" id="albums-section">
-         Albums
+        💪 Fitness Progress
     </h1>
 
     <div class="gallery">
@@ -615,7 +650,7 @@
         <div class="album-card">
 
             <div class="favorite">
-                ❤
+                🔥
             </div>
 
             <img src="{{ album.image.url }}">
@@ -626,7 +661,7 @@
                     {{ album.title }}
                 </div>
 
-                <!-- Removed uploaded and date for aesthetic design -->
+                
 
                 <div class="album-description">
 
@@ -660,7 +695,7 @@
 
     <div class="footer">
 
-         Made with dreams, memories, and peaceful magic 
+         Push Harder • Stay Strong • Track Progress 
 
     </div>
 
