@@ -25,7 +25,12 @@ SECRET_KEY = 'django-insecure-9akdc2_jzrfzb5$#(&@mr*05ki-uj)ywtnt^9p)x+@yeuem81)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'photo-album-system-x1de.onrender.com',
+    '.onrender.com',
+    '127.0.0.1',
+    'localhost'
+]
 
 
 # Application definition
